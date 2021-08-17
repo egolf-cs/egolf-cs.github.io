@@ -25,6 +25,17 @@
         .min-vh-10 {
             min-height: 10vh;
         }
+        .min-vh-5 {
+            min-height: 5vh;
+        }
+        .faded-hr{
+            display:block;
+            border:none;
+            color:white;
+            height:1px;
+            background:black;
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#EEE), to(#16161D));
+        }
 
     </style>
 <body>
@@ -40,11 +51,11 @@
                 .
             </p>
         </div>
-        <div class="d-flex flex-column min-vh-10 justify-content-center align-items-center">
+        <div class="d-flex flex-column min-vh-5 justify-content-center align-items-center">
             <a href="#pg1">More</a>
         </div>
     </div>
-    <hr>
+    <hr class="faded-hr">
     <div id="pg1" class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <h1>Coming Soon</h1>
     </div>
