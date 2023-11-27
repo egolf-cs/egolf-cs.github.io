@@ -5,65 +5,96 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #16161D;
+            background-color: #F2F3F5;
+            /* background-color: #F1E9D2; */
         }
         body, a {
-            color: #EEEEEE;
+            color: #16161D;
+        }
+        .gutter {
+            /* background-color: #16161D; */
+            background-color: #F2F3F5;
         }
         a:hover {
             color: #A41623;
         }
-        h1, h2, h3, h4, h5, h6{
-          line-height: 2.5em;
+        .inner-main {
+            background-color: #F2F3F5;
+            color: #16161D;
         }
-        .min-vh-95 {
-            min-height: 95vh;
+        .section {
+            padding-top: 2em;
         }
-        .min-vh-90 {
-            min-height: 90vh;
-        }
-        .min-vh-10 {
-            min-height: 10vh;
-        }
-        .min-vh-5 {
-            min-height: 5vh;
-        }
-        .faded-hr{
-            display:block;
-            border:none;
-            color:white;
-            height:1px;
-            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#EEE), to(#16161D));
-        }
-        .faded-hr2 {
-            border: 0;
-            height: 1px;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+        .sc {
+            font-variant: small-caps;
         }
 
+        .min-vh-100 {
+            min-height: 100vh;
+        }
+        li{
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <div id="pg0">
-        <div class="d-flex flex-column min-vh-90 justify-content-center align-items-center">
-            <h1>Derek Egolf</h1>
-            <h4>Northeastern University</h4>
-            <h4>Formal Methods</h4>
-            <p>I am advised by
-                <a href="https://www.khoury.northeastern.edu/people/stavros-tripakis/">Stavros Tripakis</a>
-                .
-            </p>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <div class="col-3 gutter"></div>
+            <div class="col-lg-6 inner-main min-vh-100">
+                <div class="section">
+                    <h1 class="sc">Derek Egolf</h1>
+                    <p>egolf (dot) d (at) northeastern (dot) edu</p>
+                    <p>
+                        I am a PhD student (since 2021) at Northeastern University. My advisor is Stavros Tripakis. 
+                        My primary research focus is the automatic generation of correct-by-construction systems (synthesis).
+                        In the past this focus has included verified lexer generation. 
+                        More recently it has been directed toward the automatic synthesis of distributed protocols.
+                        Before coming to Northeastern, I completed my BS in Computer Science and Mathematics at Tufts 
+                        University. 
+
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="sc">Publications</h3>
+                    <ol>
+                        <li>
+                            <b>Decoupled Fitness Criteria for Reactive Systems.</b>
+                            <!-- <br> -->
+                            <u>Derek Egolf</u>, Stavros Tripakis. 
+                            <b>SEFM 2023.</b>
+                        </li>
+                        <li>
+                            <b>Synthesis of Distributed Protocols by Enumeration Modulo Isomorphisms.</b>
+                            <!-- <br> -->
+                            <u>Derek Egolf</u>, Stavros Tripakis. 
+                            <b>ATVA 2023.</b>
+                        </li>
+                        <li>
+                            <b>Verified ALL (*) Parsing with Semantic Actions and Dynamic Input Validation.</b>
+                            <!-- <br> -->
+                            Sam Lasser, Chris Casinghino, <u>Derek Egolf</u>, Kathleen Fisher, Cody Roux. 
+                            <b>NFM 2023.</b>
+                        </li>
+                        <li>
+                            <b>Verbatim++: Verified, Optimized, and Semantically Rich Lexing with Derivatives.</b>
+                            <!-- <br> -->
+                            <u>Derek Egolf</u>, Sam Lasser, Kathleen Fisher.
+                            <b>CPP 2022.</b>
+                        </li>
+                        <li>
+                            <b>Verbatim: A Verified Lexer Generator.</b>
+                            <!-- <br> -->
+                            <u>Derek Egolf</u>, Sam Lasser, Kathleen Fisher.
+                            <b>LangSec 2021.</b>
+                        </li>
+                    </ol>
+                </div>
+
+               
+            </div>
+            <div class="col-3 gutter"></div>
         </div>
-        <div class="d-flex flex-column min-vh-5 justify-content-center align-items-center">
-            <a href="#pg1">More</a>
-        </div>
-    </div>
-    <div id="pg1"></div>
-    <hr class="faded-hr2">
-    <div class="d-flex flex-column min-vh-95 justify-content-center align-items-center">
-        <h1>Coming Soon</h1>
     </div>
 </body>
